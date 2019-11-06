@@ -51,6 +51,7 @@
       >
 
         <template slot="items" slot-scope="props" >
+          <td>{{ props.item.pk }}</td>
           <td>{{ props.item.cust_number }}</td>
           <td>{{ props.item.name }}</td>
           <td nowrap="true">{{ props.item.address }}</td>
@@ -94,6 +95,12 @@
       customerSize: 0,
       showMsg: '',
       headers: [
+        {
+          text: 'Record Number',
+          align: 'left',
+          sortable: false,
+
+        },
         {
           text: 'Customer Number',
           align: 'left',

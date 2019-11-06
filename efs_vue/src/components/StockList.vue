@@ -51,7 +51,8 @@
       >
 
         <template slot="items" slot-scope="props" >
-          <td>{{ props.item.customer }}</td>
+          <td>{{ props.item.pk}}</td>
+          <td>{{ props.item.customer}}</td>
           <td nowrap="true">{{ props.item.symbol }}</td>
           <td nowrap="true">{{ props.item.name }}</td>
           <td nowrap="true">{{ props.item.shares }}</td>
@@ -90,7 +91,7 @@
       stockSize: 0,
       showMsg: '',
       headers: [
-        
+        {text: 'Record Number', sortable: false, align: 'left',},
         {text: 'Customer', sortable: false, align: 'left',},
         {text: 'Symbol', sortable: false, align: 'left',},
         {text: 'Name', sortable: false, align: 'left',},

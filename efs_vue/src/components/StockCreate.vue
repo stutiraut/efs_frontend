@@ -26,7 +26,13 @@
 
             <v-form ref="form" lazy-validation>
               <v-container>
-
+                
+                <v-text-field
+                  v-model="stock.pk"
+                  label="Record Number"
+                  required
+                  type="number"
+                />
                 <v-text-field
                   v-model="stock.customer"
                   label="Customer"

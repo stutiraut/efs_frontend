@@ -51,6 +51,7 @@
       >
 
         <template slot="items" slot-scope="props" >
+          <td>{{ props.item.pk }}</td>
           <td>{{ props.item.customer }}</td>
           <td nowrap="true">{{ props.item.category }}</td>
           <td nowrap="true">{{ props.item.description }}</td>
@@ -93,7 +94,7 @@
       investmentSize: 0,
       showMsg: '',
       headers: [
-        
+        {text: 'Record Number', sortable: false, align: 'left',},
         {text: 'Customer', sortable: false, align: 'left',},
         {text: 'Category', sortable: false, align: 'left',},
         {text: 'Description', sortable: false, align: 'left',},
